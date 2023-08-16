@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+:root{
+    --primaryBg: hsl(31, 77%, 52%);
+    --secondBg: hsl(184, 100%, 22%);
+    --thirBg: hsl(179, 100%, 13%);
+
+    --paragraphColor: hsla(0, 0%, 100%, 0.75);
+    --primaryColor: hsl(0, 0%, 95%);
+}
