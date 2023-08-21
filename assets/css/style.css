@@ -1,15 +1,109 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
     --primaryBg: hsl(31, 77%, 52%);
     --secondBg: hsl(184, 100%, 22%);
-    --thirBg: hsl(179, 100%, 13%);
-
+    --thirdBg: hsl(179, 100%, 13%);
     --paragraphColor: hsla(0, 0%, 100%, 0.75);
     --primaryColor: hsl(0, 0%, 95%);
 }
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+body .container{
+
+    width: 70%;
+    height: 80%;
+    display: flex;
+}
+body .container div{
+    width: 33.33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4rem;
+}
+body .container div:nth-child(1){
+    background-color: var(--primaryBg);
+    border-radius: 1.5% 0% 0% 1.5%;
+}
+body .container div:nth-child(2){
+    background-color: var(--secondBg);
+}
+body .container div:nth-child(3){
+    background-color: var(--thirdBg);
+    border-radius: 0% 1.5% 1.5% 0%;
+}
+body .container div img{
+    width: 64px;
+    height: 40px;
+}
+body .container div h2{
+   font-size: 2.5rem;
+   color: var(--primaryColor);
+   text-transform: uppercase;
+}
+body .container div p{
+    margin-bottom: 10rem;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    color: var(--paragraphColor);
+ }
+ body .container div .botao{
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--primaryColor);
+    border-radius: 30px;
+    padding: 12px;
+    width: 60%;
+    height: 10%;
+    border: solid 5px var(--primaryColor);
+    transition: all 0.5s;
+ }
+ body .container div:nth-child(1) .botao{
+    color: var(--primaryBg);
+ }
+ body .container div:nth-child(2) .botao{
+    color: var(--secondBg);
+ }
+ body .container div:nth-child(3) .botao{
+    color: var(--thirdBg);
+ }
+
+ body .container div:nth-child(1) .botao:hover{
+    background-color: var(--primaryBg);
+    color: var(--primaryColor);
+ }
+ body .container div:nth-child(2) .botao:hover{
+    background-color: var(--secondBg);
+    color: var(--primaryColor);
+ }
+ body .container div:nth-child(3) .botao:hover{
+    background-color: var(--thirdBg);
+    color: var(--primaryColor);
+ }
+
+
+@media screen {
+    
+}
+
+
+
