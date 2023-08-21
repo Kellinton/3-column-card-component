@@ -35,7 +35,7 @@ body .container div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 4rem;
+    padding: 6rem;
 }
 body .container div:nth-child(1){
     background-color: var(--primaryBg);
